@@ -2,179 +2,254 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SkoNS 529/26 – General information</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkoNS 529/26 – Contact</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .menu-bar{background:rgba(255,255,255,.92); border-bottom:1px solid var(--border)}
-    .menu-inner{display:flex; gap:10px; align-items:center; justify-content:center; padding:10px 0; flex-wrap:wrap}
-    .footer-logos{display:flex; gap:24px; align-items:center; justify-content:center; padding-top:10px}
-    .footer-logos img{height:46px; width:auto}
-    .grid{display:grid; grid-template-columns: 1.2fr .8fr; gap:16px}
-    .mini-card{background:#fff; border:1px solid var(--border); border-radius:14px; padding:14px}
-    .mini-card h3{margin:0 0 8px}
-    .kv{margin:0; color:var(--muted)}
-    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
-    @media (max-width:600px){ .banner img{max-height:180px} }
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .header-row h2 {
+      margin: 0;
+    }
   </style>
 </head>
 
 <body>
-  
-
   <!-- BANNER -->
-<div class="banner">
-  <img src="assets/baner..png" alt="SkoNS 529/26 banner" />
-</div>
-
-<!-- MENU + LANGUAGE (SAME ROW) -->
-<div class="menu-bar">
-  <div class="container menu-inner">
-
-    <nav class="nav">
-      <a href="index-en.html">Home</a>
-      <a href="info-en.html">General information</a>
-      <a href="program-en.html" class="active">Programme</a>
-      <a href="contact-en.html">Contact</a>
-    </nav>
-
-    <div class="lang">
-      <a href="program-en.html" class="active-lang">EN</a>
-      <span class="sep">/</span>
-      <a href="program.html">SR</a>
-    </div>
-
+  <div class="banner">
+    <img src="assets/baner_sirok.png" alt="SkoNS 529/26 banner" />
   </div>
-</div>
 
+  <!-- MENU -->
+  <div class="menu-bar">
+    <div class="container menu-inner">
 
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="info.html">General Information</a>
+        <a href="program.html" class="active">Program</a>
+        <a href="kontakt.html">Contact</a>
+      </nav>
+
+      <div class="lang">
+        <a href="program-en.html" class="active-lang">EN</a>
+        <span class="sep">/</span>
+        <a href="program.html">SR</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTENT -->
   <main class="main">
     <div class="container">
       <section class="card">
-        <div style="display:flex; justify-content:space-between; gap:12px; align-items:center; flex-wrap:wrap;">
-          <h2 style="margin:0;">Programme</h2>
-          <a class="btn" href="program.pdf" download>Download programme (PDF)</a>
+        <div class="header-row">
+          <h2 style="margin:0">Preliminary Program</h2><a class="btn" href="program.pdf" download>Download program (PDF)</a>
         </div>
 
-        <p class="footer" style="margin-top:10px;">
-          Preliminary programme based on the provided document. :contentReference[oaicite:12]{index=12}
+        <p style="margin-top:0;color:var(--muted)">
+          The program is presented by days. Time, title, and speakers are shown in a table for easier overview.
         </p>
 
-        <h3>Friday • 27 February 2026</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th class="col-time">Time</th>
-                <th>Session / Title</th>
-                <th>Speakers</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td class="col-time">14:00–14:40</td><td>Registration & welcome lunch</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">14:40–15:00</td><td>Opening ceremony – welcome remarks</td><td class="col-speakers">Radmila Matijević & Aleksandar Manolev</td></tr>
-              <tr><td class="col-time">15:00–15:20</td><td>Hypercalcaemia and cardiovascular risk</td><td class="col-speakers">Biljana Shishkova</td></tr>
-              <tr><td class="col-time">15:20–15:40</td><td>CKD and bone (osteoporosis, adynamic bone disease)</td><td class="col-speakers">Nadica Misovska</td></tr>
-              <tr><td class="col-time">15:40–16:00</td><td>CKD – prevention and treatment of secondary hyperparathyroidism</td><td class="col-speakers">Ieva Ruza</td></tr>
-              <tr><td class="col-time">16:00–16:20</td><td>GIOP</td><td class="col-speakers">Tina Dušek (Croatia)</td></tr>
-              <tr><td class="col-time">16:20–16:30</td><td>Discussion</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">16:30–17:00</td><td>Sponsored symposium</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">17:00–17:20</td><td>Coffee break</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">17:20–17:50</td><td>Sponsored symposium</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">17:50–18:10</td><td>Acromegaly and fracture risk</td><td class="col-speakers">Iskra Bitovska</td></tr>
-              <tr><td class="col-time">18:10–18:30</td><td>Subclinical hyperthyroidism and fracture risk</td><td class="col-speakers">Biljana Ivanovska Bojadjiev</td></tr>
-              <tr><td class="col-time">18:30–18:50</td><td>Hypogonadism, osteoporosis and sarcopenia</td><td class="col-speakers">Sasha Jovanovska Mishevska</td></tr>
-              <tr><td class="col-time">18:50–19:00</td><td>Hyperaldosteronism and bone</td><td class="col-speakers">Ivana Bajkin</td></tr>
-              <tr><td class="col-time">19:00</td><td>Service information</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">20:30</td><td>Gala dinner</td><td class="col-speakers"></td></tr>
-            </tbody>
-          </table>
+        <!-- 27.02.2026 -->
+        <h3 style="margin:18px 0 8px">27.02.2026 (Friday)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Title</th>
+              <th>Speakers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-time">14:00 – 14:40</td>
+              <td>Participant registration and welcome lunch</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-time">14:40 – 15:00</td>
+              <td>Opening ceremony – introductory remarks</td>
+              <td>Radmila Matijević &amp; Aleksandar Manolev</td>
+            </tr>
+            <tr>
+              <td class="col-time">15:00 – 15:20</td>
+              <td>Hypercalcemia and cardiovascular risk</td>
+              <td>Biljana Shishkova</td>
+            </tr>
+            <tr>
+              <td class="col-time">15:20 – 15:40</td>
+              <td>CKD and bone (osteoporosis, adynamic bone disease)</td>
+              <td>Nadica Misovska</td>
+            </tr>
+            <tr>
+              <td class="col-time">15:40 – 16:00</td>
+              <td>CKD – prevention and treatment of secondary hyperparathyroidism</td>
+              <td>Ieva Ruza</td>
+            </tr>
+            <tr>
+              <td class="col-time">16:00 – 16:20</td>
+              <td>GIOP</td>
+              <td>Tina Dušek, Croatia</td>
+            </tr>
+            <tr>
+              <td class="col-time">16:20 – 16:30</td>
+              <td>Discussion</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-time">16:30 – 17:00</td>
+              <td>Sponsored symposium</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-time">17:00 – 17:20</td>
+              <td>Coffee break</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-time">17:20 – 17:50</td>
+              <td>Sponsored symposium</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-time">17:50 – 18:10</td>
+              <td>Acromegaly and fracture risk</td>
+              <td>Iskra Bitovska</td>
+            </tr>
+            <tr>
+              <td class="col-time">18:10 – 18:30</td>
+              <td>Subclinical hyperthyroidism and fracture risk</td>
+              <td>Biljana Ivanovska Bojadjiev</td>
+            </tr>
+            <tr>
+              <td class="col-time">8:30 – 18:50</td>
+              <td>Hypogonadism, osteoporosis, and sarcopenia</td>
+              <td>Sasha Jovanovska Mishevska</td>
+            </tr>
+            <tr>
+              <td class="col-time">18:50 – 19:00</td>
+              <td>Hyperaldosteronism and bone</td>
+              <td>Ivana Bajkin</td>
+            </tr>
+            <tr>
+              <td class="col-time">19:00</td>
+              <td>Service information</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-time">20:30</td>
+              <td>Gala dinner</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- 28.02.2026 -->
+        <h3 style="margin:22px 0 8px">28.02.2026 (Saturday)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Title</th>
+              <th>Speakers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="col-time">10:00 – 10:20</td><td>Frax Plus</td><td>Eugene McCloskey</td></tr>
+            <tr><td class="col-time">10:20 – 10:40</td><td>REMS</td><td>Pola Pisani</td></tr>
+            <tr><td class="col-time">10:40 – 11:00</td><td>Forget confidence loss when coming across X-linked hypophosphatemia!</td><td>Marko Stojanović</td></tr>
+            <tr><td class="col-time">11:00 – 11:20</td><td>Hypophosphatasia</td><td>Maria Luisa Brandi</td></tr>
+            <tr><td class="col-time">11:20 – 11:30</td><td>Discussion</td><td></td></tr>
+            <tr><td class="col-time">11:30 – 12:00</td><td>Sponsored symposium</td><td></td></tr>
+            <tr><td class="col-time">12:00 – 12:20</td><td>Coffee break</td><td></td></tr>
+            <tr><td class="col-time">12:20 – 12:40</td><td>Evolving use of AI in the detection of vertebral fractures</td><td>Polyzois Makras</td></tr>
+            <tr><td class="col-time">12:40 – 13:00</td><td>Artificial intelligence approaches to CKD-MBD</td><td>Shkelqim Muharremi</td></tr>
+            <tr><td class="col-time">13:00 – 13:20</td><td>New paths and potential game changers for the future management and treatment of osteoarthritis</td><td>Ali Mobasheri</td></tr>
+            <tr><td class="col-time">13:20 – 13:40</td><td>Sarcopenia</td><td>TBC</td></tr>
+            <tr><td class="col-time">13:40 – 13:50</td><td>Discussion</td><td></td></tr>
+            <tr><td class="col-time">13:50 – 14:20</td><td>Sponsored symposium</td><td></td></tr>
+            <tr><td class="col-time">14:20 – 15:20</td><td>Lunch</td><td></td></tr>
+            <tr><td class="col-time">15:20 – 15:50</td><td>Sponsored symposium</td><td></td></tr>
+            <tr><td class="col-time">15:50 – 16:10</td><td>Argentine tango therapy for osteoporosis</td><td>Tijana Ičin</td></tr>
+            <tr><td class="col-time">16:10 – 16:30</td><td>When is DXA indicated in patients with pain</td><td>Tomi Kovačević</td></tr>
+            <tr><td class="col-time">16:30 – 16:50</td><td>Polyostotic fibrous dysplasia – literature review and case report</td><td>Stefan Janičić</td></tr>
+            <tr><td class="col-time">16:50 – 17:00</td><td>Discussion</td><td></td></tr>
+            <tr><td class="col-time">17:00 – 17:30</td><td>Sponsored symposium</td><td></td></tr>
+            <tr><td class="col-time">17:30 – 17:50</td><td>Coffee break</td><td></td></tr>
+            <tr><td class="col-time">17:50 – 18:20</td><td>Sponsored symposium</td><td></td></tr>
+            <tr><td class="col-time">18:20 – 18:40</td><td>Bone in oncology</td><td>Gorana Matovina</td></tr>
+            <tr><td class="col-time">18:40 – 19:00</td><td>Osteogenesis imperfecta</td><td>Lothar Seefried</td></tr>
+            <tr><td class="col-time">19:00 – 19:20</td><td>TBC</td><td></td></tr>
+            <tr><td class="col-time">19:20 – 19:30</td><td>Discussion</td><td></td></tr>
+          </tbody>
+        </table>
+
+        <!-- 01.03.2026 -->
+        <h3 style="margin:22px 0 8px">01.03.2026 (Sunday)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Title</th>
+              <th>Speakers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="col-time">10:00 – 10:20</td><td>GLP-1 RA and bone metabolism</td><td>Andrijana Milankov</td></tr>
+            <tr><td class="col-time">10:20 – 10:40</td><td>GLP-1 RA and sarcopenia</td><td>Damir Benc</td></tr>
+            <tr><td class="col-time">10:40 – 11:00</td><td>Obesity from an orthopedic perspective</td><td>Oliver Dulić</td></tr>
+            <tr><td class="col-time">11:00 – 11:20</td><td>Diabetes and fracture risk</td><td>Milena Mitrović</td></tr>
+            <tr><td class="col-time">11:20 – 11:40</td><td>MetALD and MASH – are they real risks for osteoporosis?</td><td>Aleksandar Manolev</td></tr>
+            <tr><td class="col-time">11:40 – 11:50</td><td>Discussion</td><td></td></tr>
+            <tr><td class="col-time">11:50 – 12:10</td><td>Sponsored symposium</td><td></td></tr>
+            <tr><td class="col-time">12:10 – 12:40</td><td>Coffee break</td><td></td></tr>
+            <tr>
+              <td class="col-time">12:40 – 14:00</td>
+              <td>
+                <strong>Rotating workshop in 3 acts:</strong><br>
+                Proper interpretation of laboratory findings<br><br>
+                A surprise for patients and physicians – case presentations with answers or group work using paper patients<br><br>
+                ROI and artefacts on DXA<br><br>
+                Patient positioning for DXA examinations
+              </td>
+              <td>
+                Tijana Ičin / Kristina Stepanović<br><br>
+                Aleksandar Manolev / Biljana Ivanovska Bojadjiev<br><br>
+                Radmila Matijević / Stefan Janičić<br><br>
+                Milan &amp; technician
+              </td>
+            </tr>
+            <tr><td class="col-time">14:00</td><td>Congress closing</td><td></td></tr>
+          </tbody>
+        </table>
+
+        <div class="footer">
+          *Note: The program is preliminary and subject to change.
         </div>
-
-        <h3 style="margin-top:18px;">Saturday • 28 February 2026</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th class="col-time">Time</th>
-                <th>Session / Title</th>
-                <th>Speakers</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td class="col-time">10:00–10:20</td><td>Frax plus</td><td class="col-speakers">Eugene McCloskey</td></tr>
-              <tr><td class="col-time">10:20–10:40</td><td>REMS</td><td class="col-speakers">Pola Pisani</td></tr>
-              <tr><td class="col-time">10:40–11:00</td><td>Forget confidence loss when coming across X-linked hypophosphatemia!</td><td class="col-speakers">Marko Stojanović</td></tr>
-              <tr><td class="col-time">11:00–11:20</td><td>Hypophosphatasia</td><td class="col-speakers">Maria Luisa Brandi</td></tr>
-              <tr><td class="col-time">11:20–11:30</td><td>Discussion</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">11:30–12:00</td><td>Sponsored symposium</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">12:00–12:20</td><td>Coffee break</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">12:20–12:40</td><td>Evolving use of AI in the detection of vertebral fractures</td><td class="col-speakers">Polyzois Makras</td></tr>
-              <tr><td class="col-time">12:40–13:00</td><td>Artificial intelligence approaches to CKD-MBD</td><td class="col-speakers">Shkelqim Muharremi</td></tr>
-              <tr><td class="col-time">13:00–13:20</td><td>New paths and potential game changers for the future management and treatment of osteoarthritis</td><td class="col-speakers">Ali Mobasheri</td></tr>
-              <tr><td class="col-time">13:20–13:40</td><td>Sarcopenia</td><td class="col-speakers">TBC</td></tr>
-              <tr><td class="col-time">13:40–13:50</td><td>Discussion</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">13:50–14:20</td><td>Sponsored symposium</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">14:20–15:20</td><td>Lunch</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">15:20–15:50</td><td>Sponsored symposium</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">15:50–16:10</td><td>Argentine tango therapy in osteoporosis</td><td class="col-speakers">Tijana Ičin</td></tr>
-              <tr><td class="col-time">16:10–16:30</td><td>When is DXA indicated in patients with pain?</td><td class="col-speakers">Tomi Kovačević</td></tr>
-              <tr><td class="col-time">16:30–16:50</td><td>Polyostotic fibrous dysplasia – literature review and case report</td><td class="col-speakers">Stefan Janičić</td></tr>
-              <tr><td class="col-time">16:50–17:00</td><td>Discussion</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">17:00–17:30</td><td>Sponsored symposium</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">17:30–17:50</td><td>Coffee break</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">17:50–18:20</td><td>Sponsored symposium</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">18:20–18:40</td><td>Bone in oncology</td><td class="col-speakers">Gorana Matovina</td></tr>
-              <tr><td class="col-time">18:40–19:00</td><td>Osteogenesis imperfecta</td><td class="col-speakers">Lothar Seefried</td></tr>
-              <tr><td class="col-time">19:00–19:20</td><td>TBC</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">19:20–19:30</td><td>Discussion</td><td class="col-speakers"></td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3 style="margin-top:18px;">Sunday • 1 March 2026</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th class="col-time">Time</th>
-                <th>Session / Title</th>
-                <th>Speakers</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td class="col-time">10:00–10:20</td><td>GLP1 RA and bone metabolism</td><td class="col-speakers">Andrijana Milankov</td></tr>
-              <tr><td class="col-time">10:20–10:40</td><td>GLP1 RA and sarcopenia</td><td class="col-speakers">Damir Benc</td></tr>
-              <tr><td class="col-time">10:40–11:00</td><td>Obesity from the orthopaedic perspective</td><td class="col-speakers">Oliver Dulić</td></tr>
-              <tr><td class="col-time">11:00–11:20</td><td>Diabetes and fracture risk</td><td class="col-speakers">Milena Mitrović</td></tr>
-              <tr><td class="col-time">11:20–11:40</td><td>MetALD and MASH – are the risks for osteoporosis real?</td><td class="col-speakers">Aleksandar Manolev</td></tr>
-              <tr><td class="col-time">11:40–11:50</td><td>Discussion</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">11:50–12:10</td><td>Sponsored symposium</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">12:10–12:40</td><td>Coffee break</td><td class="col-speakers"></td></tr>
-
-              <tr><td class="col-time">12:40–14:00</td><td><strong>Rotating workshop (3 parts)</strong><br>• Correct interpretation of laboratory findings<br>• Case-based surprise for the patient and doctor (cases + answers or group work with paper patients)<br>• ROI and artefacts on DXA<br>• Patient positioning for DXA examinations</td>
-                  <td class="col-speakers">Tijana Ičin / Kristina Stepanović<br>Aleksandar Manolev / Biljana Ivanovska Bojadjiev<br>Radmila Matijević / Stefan Janičić<br>Milan & tech team</td></tr>
-
-              <tr><td class="col-time">14:00</td><td>Closing of the congress</td><td class="col-speakers"></td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p class="footer" style="margin-top:10px;">
-          Source: preliminary programme document. :contentReference[oaicite:13]{index=13}
-        </p>
       </section>
- 
-      <footer class="footer">
-        <div class="footer-logos">
-          <img src="assets/logo-astas.png" alt="ASTAS logo">
-          <img src="assets/logo-makedonija.png" alt="Udruženje internista Makedonije logo">
-        </div>
-        <div style="text-align:center; margin-top:10px">
-          © SkoNS 529/26 – Novi Sad, 27.02–01.03.2026
-        </div>
-      </footer>
     </div>
   </main>
+
+  <footer class="topbar">
+    <div class="container topbar-inner"
+       style="justify-content:center; flex-direction:column; gap:12px; padding:16px 0;">
+
+    <div class="footer-logos">
+      <img src="assets/logo-astas.png" alt="ASTAS logo">
+      <img src="assets/logo-makedonija.png" alt="Udruženje internista Makedonije logo">
+    </div>
+
+    <div style="font-size:13px;color:var(--muted);text-align:center">
+      © SkoNS 529/2026 • Novi Sad
+    </div>
+  </div>
+  </footer>
 </body>
 </html>

@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
+    /* ===== HEADER ROW (naslov + dugme na istoj liniji) ===== */
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .header-row h2 {
+      margin: 0;
+    }
+
     /* ===== MENU BAR (meni + language switch u ISTOM REDU) ===== */
     .menu-bar{
       background:rgba(255,255,255,.92);
@@ -133,7 +145,7 @@
 <body>
   <!-- BANER -->
 <div class="banner">
-  <img src="assets/baner..png" alt="SkoNS 529/26 baner" />
+  <img src="assets/baner_sirok.png" alt="SkoNS 529/26 baner" />
 </div>
 
 <!-- MENI -->
@@ -164,8 +176,6 @@
       <section class="card">
         <div class="header-row">
           <h2 style="margin:0">Preliminarni program</h2>
-
-          <!-- PROMENI href ako ti PDF ima drugo ime -->
           <a class="btn" href="program.pdf" download>Preuzmi program (PDF)</a>
         </div>
 
