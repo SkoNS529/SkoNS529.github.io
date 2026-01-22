@@ -13,6 +13,7 @@
     .mini-card{background:#fff; border:1px solid var(--border); border-radius:14px; padding:14px}
     .mini-card h3{margin:0 0 8px}
     .kv{margin:0; color:var(--muted)}
+    .table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch}
     @media (max-width:600px){ .banner img{max-height:180px} }
   </style>
 </head>
@@ -68,10 +69,10 @@
           Učesnicima su dostupni i paketi sa smeštajem u hotelima <strong>Sheraton</strong>, <strong>Pupin</strong> i <strong>Prezident</strong> po povlašćenim cenama.
         </p>
 
-        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:stretch; margin-top:20px">
-          <div class="mini-card">
-            <h3>Kotizacije i paketi</h3>
-            <table style="margin-bottom:8px">
+        <div class="mini-card" style="margin-top:20px">
+          <h3>Kotizacije i paketi</h3>
+          <div class="table-scroll">
+            <table style="margin-bottom:8px; min-width:400px">
               <tr>
                 <td></td>
                 <td style="text-align:center"><strong>Redovna</strong></td>
