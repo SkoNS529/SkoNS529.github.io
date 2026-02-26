@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    /* ===== HEADER ROW (naslov + dugme na istoj liniji) ===== */
     .header-row {
       display: flex;
       justify-content: space-between;
@@ -15,11 +14,8 @@
       gap: 12px;
       flex-wrap: wrap;
     }
-    .header-row h2 {
-      margin: 0;
-    }
+    .header-row h2 { margin: 0; }
 
-    /* ===== MENU BAR (meni + language switch u ISTOM REDU) ===== */
     .menu-bar{
       background:rgba(255,255,255,.92);
       border-bottom:1px solid var(--border);
@@ -28,23 +24,20 @@
       z-index:50;
       backdrop-filter: blur(6px);
     }
-
     .menu-inner{
       position:relative;
       display:flex;
       align-items:center;
-      justify-content:center; /* nav centriran */
+      justify-content:center;
       padding:10px 0;
       min-height:54px;
     }
-
     .nav{
       display:flex;
       gap:10px;
       flex-wrap:wrap;
       justify-content:center;
     }
-
     .nav a{
       text-decoration:none;
       color:var(--text);
@@ -61,8 +54,6 @@
       color: var(--accent-dark);
       box-shadow: inset 0 0 0 1px rgba(47,127,139,.25);
     }
-
-    /* language switch desno u traci */
     .lang{
       position:absolute;
       right:0;
@@ -94,7 +85,6 @@
     }
     .lang .sep{ color:var(--muted); opacity:.7; }
 
-    /* ===== CONTACT GRID ===== */
     .contact-grid{
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -111,7 +101,6 @@
     .mini-card p{ margin:0 0 8px; color:var(--text); }
     .mini-card a{ color:var(--accent-dark); font-weight:700; }
 
-    /* footer logo centar + razmak */
     .footer-logos{
       display:flex;
       gap:22px;
@@ -122,21 +111,13 @@
     }
     .footer-logos img{ height:46px; width:auto; }
 
-    /* mobilno */
     @media (max-width: 900px){
       .contact-grid{ grid-template-columns:1fr; }
     }
     @media (max-width: 700px){
       .banner img{ max-height: 220px; }
-      .menu-inner{
-        justify-content:flex-start; /* da ne gura nav ako je gusto */
-        padding-left:0;
-      }
-      .nav{
-        width:100%;
-        justify-content:center;
-        padding-right:90px; /* prostor za lang desno */
-      }
+      .menu-inner{ justify-content:flex-start; padding-left:0; }
+      .nav{ width:100%; justify-content:center; padding-right:90px; }
       .lang{ right:0; padding-right:0; }
     }
   </style>
@@ -144,31 +125,26 @@
 
 <body>
   <!-- BANER -->
-<div class="banner">
-  <img src="assets/baner_sirok.png" alt="SkoNS 529/26 baner" />
-</div>
-
-<!-- MENI -->
-<div class="menu-bar">
-  <div class="container menu-inner">
-
-    <nav class="nav">
-      <a href="index.html">Početna</a>
-      <a href="info.html">Opšte informacije</a>
-      <a href="program.html" class="active">Program</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-
-    <div class="lang">
-      <a href="program-en.html">EN</a>
-      <span class="sep">/</span>
-      <a href="program.html" class="active-lang">SR</a>
-    </div>
-
+  <div class="banner">
+    <img src="assets/baner_sirok.png" alt="SkoNS 529/26 baner" />
   </div>
-</div>
 
-
+  <!-- MENI -->
+  <div class="menu-bar">
+    <div class="container menu-inner">
+      <nav class="nav">
+        <a href="index.html">Početna</a>
+        <a href="info.html">Opšte informacije</a>
+        <a href="program.html" class="active">Program</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="lang">
+        <a href="program-en.html">EN</a>
+        <span class="sep">/</span>
+        <a href="program.html" class="active-lang">SR</a>
+      </div>
+    </div>
+  </div>
 
   <!-- SADRŽAJ -->
   <main class="main">
@@ -196,7 +172,7 @@
             </thead>
             <tbody>
               <tr>
-                <td class="col-time">14:00 – 14:40</td>
+                <td class="col-time">13:00 – 14:40</td>
                 <td>Registracija učesnika i ručak dobrodošlice</td>
                 <td class="col-speakers"></td>
               </tr>
@@ -217,13 +193,13 @@
               </tr>
               <tr>
                 <td class="col-time">15:40 – 16:00</td>
-                <td>CKD – prevencija i lečenje sekundarnog hiperparatireoidizma</td>
-                <td class="col-speakers">Ieva Ruza</td>
+                <td>GIOP</td>
+                <td class="col-speakers">Tina Dušek</td>
               </tr>
               <tr>
                 <td class="col-time">16:00 – 16:20</td>
-                <td>GIOP</td>
-                <td class="col-speakers">Tina Dušek, Hrvatska</td>
+                <td>Sarcopenia</td>
+                <td class="col-speakers">Adam Cribbs</td>
               </tr>
               <tr>
                 <td class="col-time">16:20 – 16:30</td>
@@ -232,7 +208,7 @@
               </tr>
               <tr>
                 <td class="col-time">16:30 – 17:00</td>
-                <td>Sponzorisani simpozijum</td>
+                <td>Sponzorisani simpozijum Amicus</td>
                 <td class="col-speakers"></td>
               </tr>
               <tr>
@@ -241,38 +217,33 @@
                 <td class="col-speakers"></td>
               </tr>
               <tr>
-                <td class="col-time">17:20 – 17:50</td>
-                <td>Sponzorisani simpozijum</td>
-                <td class="col-speakers"></td>
-              </tr>
-              <tr>
-                <td class="col-time">17:50 – 18:10</td>
+                <td class="col-time">17:20 – 17:40</td>
                 <td>Akromegalija i frakturni rizik</td>
                 <td class="col-speakers">Iskra Bitovska</td>
               </tr>
               <tr>
-                <td class="col-time">18:10 – 18:30</td>
+                <td class="col-time">17:40 – 18:00</td>
                 <td>Subklinički hipertireoidizam i frakturni rizik</td>
                 <td class="col-speakers">Biljana Ivanovska Bojadjiev</td>
               </tr>
               <tr>
-                <td class="col-time">18:30 – 18:50</td>
+                <td class="col-time">18:00 – 18:20</td>
                 <td>Hipogonadizam, osteoporoza i sarkopenija</td>
                 <td class="col-speakers">Sasha Jovanovska Mishevska</td>
               </tr>
               <tr>
-                <td class="col-time">18:50 – 19:00</td>
-                <td>Hiperaldosteronizam i kost</td>
-                <td class="col-speakers">Ivana Bajkin</td>
+                <td class="col-time">18:20 – 18:40</td>
+                <td>Hypophosphatasia</td>
+                <td class="col-speakers">Maria Luisa Brandi</td>
               </tr>
               <tr>
-                <td class="col-time">19:00</td>
-                <td>Servisne informacije</td>
+                <td class="col-time">18:40 – 19:00</td>
+                <td>Diskusija</td>
                 <td class="col-speakers"></td>
               </tr>
               <tr>
                 <td class="col-time">20:30</td>
-                <td>Svečana večera</td>
+                <td>Svečana večera – restoran Kalem by Zak</td>
                 <td class="col-speakers"></td>
               </tr>
             </tbody>
@@ -291,32 +262,46 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td class="col-time">10:00 – 10:20</td><td>Frax plus</td><td class="col-speakers">Eugene McCloskey</td></tr>
-              <tr><td class="col-time">10:20 – 10:40</td><td>REMS</td><td class="col-speakers">Pola Pisani</td></tr>
-              <tr><td class="col-time">10:40 – 11:00</td><td>Forget confidence loss when coming across X-linked hypophosphatemia!</td><td class="col-speakers">Marko Stojanović</td></tr>
-              <tr><td class="col-time">11:00 – 11:20</td><td>Hipofosfatazija</td><td class="col-speakers">Maria Luisa Brandi</td></tr>
-              <tr><td class="col-time">11:20 – 11:30</td><td>Diskusija</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">11:30 – 12:00</td><td>Sponzorisani simpozijum</td><td class="col-speakers"></td></tr>
+              <tr>
+                <td class="col-time" rowspan="5">09:00 – 09:40</td>
+                <td colspan="2"><strong>Abstrakti prihvaćeni za usmenu prezentaciju (10 min):</strong></td>
+              </tr>
+              <tr>
+                <td style="padding-left:1.4em; text-indent:-1.4em">1. Sprega elektro, energetskog i informacionog sistema organizma</td>
+                <td class="col-speakers">Budimir Živaljević</td>
+              </tr>
+              <tr>
+                <td style="padding-left:1.4em; text-indent:-1.4em">2. Rezultati reoperacija nesaniranih preloma tela nadlakatne kosti</td>
+                <td class="col-speakers">Vladimir Ristić</td>
+              </tr>
+              <tr>
+                <td style="padding-left:1.4em; text-indent:-1.4em">3. Porodična povezanost povrede prednjeg ukrštenog ligamenta</td>
+                <td class="col-speakers">Milan Milović</td>
+              </tr>
+              <tr>
+                <td style="padding-left:1.4em; text-indent:-1.4em">4. Vreme povrede prednjeg ukrštenog ligamenta</td>
+                <td class="col-speakers">Milan Milović</td>
+              </tr>
+              <tr><td class="col-time">09:40 – 10:10</td><td>Sponzorisani simpozijum MV Pharm</td><td class="col-speakers"></td></tr>
+              <tr><td class="col-time">10:10 – 10:30</td><td>Hiperaldosteronizam i kost</td><td class="col-speakers">Ivana Bajkin</td></tr>
+              <tr><td class="col-time">10:30 – 10:50</td><td>Argentinski tango terapije osteoporoze</td><td class="col-speakers">Tijana Ičin</td></tr>
+              <tr><td class="col-time">10:50 – 11:10</td><td>Kad je DXA indikovana kod pacijenata sa bolom</td><td class="col-speakers">Tomi Kovačević</td></tr>
+              <tr><td class="col-time">11:10 – 11:30</td><td>Poliostotična fibrozna displazija – pregled literature i prikaz slučaja</td><td class="col-speakers">Stefan Janičić</td></tr>
+              <tr><td class="col-time">11:30 – 11:50</td><td>Kost u onkologiji</td><td class="col-speakers">Gorana Matovina</td></tr>
+              <tr><td class="col-time">11:50 – 12:00</td><td>Diskusija</td><td class="col-speakers"></td></tr>
               <tr><td class="col-time">12:00 – 12:20</td><td>Kafe pauza</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">12:20 – 12:40</td><td>Evolving use of AI in the detection of vertebral fractures</td><td class="col-speakers">Polyzois Makras</td></tr>
-              <tr><td class="col-time">12:40 – 13:00</td><td>Artificial intelligence approaches to CKD-MBD</td><td class="col-speakers">Shkelqim Muharremi</td></tr>
-              <tr><td class="col-time">13:00 – 13:20</td><td>New paths and potential game changers for the future management and treatment of osteoarthritis</td><td class="col-speakers">Ali Mobasheri</td></tr>
-              <tr><td class="col-time">13:20 – 13:40</td><td>Sarcopenia</td><td class="col-speakers">Adam Cribbs</td></tr>
-              <tr><td class="col-time">13:40 – 13:50</td><td>Diskusija</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">13:50 – 14:20</td><td>Sponzorisani simpozijum</td><td class="col-speakers"></td></tr>
+              <tr><td class="col-time">12:20 – 12:50</td><td>Sponzorisani simpozijum Astra Zeneca</td><td class="col-speakers"></td></tr>
+              <tr><td class="col-time">12:50 – 13:10</td><td>Evolving use of AI in the detection of vertebral fractures</td><td class="col-speakers">Polyzois Makras</td></tr>
+              <tr><td class="col-time">13:10 – 13:30</td><td>Artificial intelligence approaches to CKD-MBD</td><td class="col-speakers">Shkelqim Muharremi</td></tr>
+              <tr><td class="col-time">13:30 – 13:50</td><td>New paths and potential game changers for the future management and treatment of osteoarthritis</td><td class="col-speakers">Ali Mobasheri</td></tr>
+              <tr><td class="col-time">13:50 – 14:10</td><td>REMS</td><td class="col-speakers">Paola Pisani</td></tr>
+              <tr><td class="col-time">14:10 – 14:20</td><td>Diskusija</td><td class="col-speakers"></td></tr>
               <tr><td class="col-time">14:20 – 15:20</td><td>Ručak</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">15:20 – 15:50</td><td>Sponzorisani simpozijum</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">15:50 – 16:10</td><td>Argentinski tango terapije osteopoze</td><td class="col-speakers">Tijana Ičin</td></tr>
-              <tr><td class="col-time">16:10 – 16:30</td><td>Kad je DXA indikovana kod pacijenata sa bolom</td><td class="col-speakers">Tomi Kovačević</td></tr>
-              <tr><td class="col-time">16:30 – 16:50</td><td>Poliostotična fibrozna displazija – pregled literature i prikaz slučaja</td><td class="col-speakers">Stefan Janičić</td></tr>
+              <tr><td class="col-time">15:20 – 15:50</td><td>CKD – prevencija i lečenje sekundarnog hiperparatireoidizma</td><td class="col-speakers">Ieva Ruža</td></tr>
+              <tr><td class="col-time">15:50 – 16:10</td><td>Forget confidence loss when coming across X-linked hypophosphatemia!</td><td class="col-speakers">Marko Stojanović</td></tr>
+              <tr><td class="col-time">16:10 – 16:30</td><td>Osteogenesis imperfecta</td><td class="col-speakers">Lothar Seefried</td></tr>
+              <tr><td class="col-time">16:30 – 16:50</td><td>Centralna regulacija metabolizma kosti</td><td class="col-speakers">Mirjana Doknić</td></tr>
               <tr><td class="col-time">16:50 – 17:00</td><td>Diskusija</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">17:00 – 17:30</td><td>Sponzorisani simpozijum</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">17:30 – 17:50</td><td>Kafe pauza</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">17:50 – 18:20</td><td>Sponzorisani simpozijum</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">18:20 – 18:40</td><td>Kost u onkologiji</td><td class="col-speakers">Gorana Matovina</td></tr>
-              <tr><td class="col-time">18:40 – 19:00</td><td>Osteogenesis imperfecta</td><td class="col-speakers">Lothar Seefried</td></tr>
-              <tr><td class="col-time">19:00 – 19:20</td><td>Centralna regulacija metabolizma kosti</td><td class="col-speakers">Mirjana Doknić</td></tr>
-              <tr><td class="col-time">19:20 – 19:30</td><td>Diskusija</td><td class="col-speakers"></td></tr>
             </tbody>
           </table>
         </div>
@@ -333,31 +318,57 @@
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td class="col-time" rowspan="6">09:00 – 10:00</td>
+                <td colspan="2"><strong>Abstrakti prihvaćeni za usmenu prezentaciju (10 min):</strong></td>
+              </tr>
+              <tr>
+                <td style="padding-left:1.4em; text-indent:-1.4em">1. Indexi koštanog metabolizma kao prediktori reverzibilnosti mineralne gustine kosti nakon operativnog lečenja primarnog hiperparatireoidizma</td>
+                <td class="col-speakers">Dragan Dražin</td>
+              </tr>
+              <tr>
+                <td style="padding-left:1.4em; text-indent:-1.4em">2. Asymptomatic hyperthyroidism with comorbid osteoporosis and hypertension in a 55-year-old woman: case report and successful management</td>
+                <td class="col-speakers">Ksenija Bogeva Kostovska</td>
+              </tr>
+              <tr>
+                <td style="padding-left:1.4em; text-indent:-1.4em">3. Hormonska supstitucija kao preventivna strategija u hirurškoj menopauzi</td>
+                <td class="col-speakers">Nikolina Vuković</td>
+              </tr>
+              <tr>
+                <td style="padding-left:1.4em; text-indent:-1.4em">4. The influence of muscle strength on quality of life in patients with sarcopenia</td>
+                <td class="col-speakers">Lejla Mancev</td>
+              </tr>
+              <tr>
+                <td style="padding-left:1.4em; text-indent:-1.4em">5. Efekat vitamina D i nutritivnog statusa na količinu visceralnog masnog tkiva</td>
+                <td class="col-speakers">Stojan Stubašić</td>
+              </tr>
               <tr><td class="col-time">10:00 – 10:20</td><td>GLP1 RA i metabolizam kosti</td><td class="col-speakers">Milena Mitrović</td></tr>
               <tr><td class="col-time">10:20 – 10:40</td><td>GLP1 RA i sarkopenija</td><td class="col-speakers">Damir Benc</td></tr>
-              <tr><td class="col-time">10:40 – 11:00</td><td>Gojaznost iz ugla ortopeda</td><td class="col-speakers">Oliver Dulić</td></tr>
-              <tr><td class="col-time">11:00 – 11:20</td><td>Dijabetes i frakturni rizik</td><td class="col-speakers">Andrijana Milankov</td></tr>
-              <tr><td class="col-time">11:20 – 11:40</td><td>MetALD and MASH – da li su realni rizici za osteoporozu?</td><td class="col-speakers">Aleksandar Manolev</td></tr>
-              <tr><td class="col-time">11:40 – 11:50</td><td>Diskusija</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">11:50 – 12:10</td><td>Sponzorisani simpozijum</td><td class="col-speakers"></td></tr>
-              <tr><td class="col-time">12:10 – 12:40</td><td>Kafe pauza</td><td class="col-speakers"></td></tr>
-
+              <tr><td class="col-time">10:40 – 11:00</td><td>Dijabetes i frakturni rizik</td><td class="col-speakers">Andrijana Milankov</td></tr>
+              <tr><td class="col-time">11:00 – 11:20</td><td>MetALD and MASH – da li su realni rizici za osteoporozu?</td><td class="col-speakers">Aleksandar Manolev</td></tr>
+              <tr><td class="col-time">11:20 – 11:30</td><td>Diskusija</td><td class="col-speakers"></td></tr>
+              <tr><td class="col-time">11:30 – 12:00</td><td>Sponzorisani simpozijum Novo Nordisk</td><td class="col-speakers"></td></tr>
+              <tr><td class="col-time">12:00 – 12:20</td><td>Kafe pauza</td><td class="col-speakers"></td></tr>
               <tr>
-                <td class="col-time">12:40 – 14:00</td>
-                <td><strong>Rotirajuća radionica u 3 čina:</strong><br>
-                    Pravilno tumačenje laboratorijskih nalaza<br><br>
-                    Iznenađenje za pacijenta i lekara – prikazi slučajeva uz odgovore ili grupni rad sa papirnatim pacijentima<br><br>
-                    ROI and artefacts on DXA<br><br>
-                    Pozicioniranje pacijenta za DXA preglede
-                </td>
-                <td class="col-speakers">
-                  Tijana Ičin / Kristina Stepanović<br><br>
-                  Aleksandar Manolev / Biljana Ivanovska Bojadjiev / Marijana Berović<br><br>
-                  Radmila Matijević / Stefan Janičić<br><br>
-                  Milan Milošević
-                </td>
+                <td class="col-time" rowspan="5">12:20 – 14:00</td>
+                <td colspan="2"><strong>Rotirajuća radionica u 4 čina:</strong></td>
               </tr>
-
+              <tr>
+                <td>1. Pravilno tumačenje laboratorijskih nalaza</td>
+                <td class="col-speakers">Tijana Ičin / Kristina Stepanović</td>
+              </tr>
+              <tr>
+                <td>2. Iznenađenje za pacijenta i lekara – prikazi slučajeva uz odgovore ili grupni rad sa papirnatim pacijentima</td>
+                <td class="col-speakers">Aleksandar Manolev / Biljana Ivanovska Bojadjiev / Marijana Berović</td>
+              </tr>
+              <tr>
+                <td>3. ROI and artefacts on DXA</td>
+                <td class="col-speakers">Radmila Matijević / Stefan Janičić</td>
+              </tr>
+              <tr>
+                <td>4. Pozicioniranje pacijenta za DXA preglede</td>
+                <td class="col-speakers">Milan Milošević</td>
+              </tr>
               <tr><td class="col-time">14:00</td><td>Zatvaranje kongresa</td><td class="col-speakers"></td></tr>
             </tbody>
           </table>
@@ -371,16 +382,16 @@
   </main>
 
   <footer class="topbar" style="border-top:1px solid var(--border); border-bottom:none;">
-  <div class="container topbar-inner"
-       style="justify-content:center; flex-direction:column; gap:12px; padding:16px 0;">
-
-    <div class="footer-logos">
-      <img src="assets/logo-astas.png" alt="ASTAS logo">
-      <img src="assets/logo-makedonija.png" alt="Udruženje internista Makedonije logo">
+    <div class="container topbar-inner"
+         style="justify-content:center; flex-direction:column; gap:12px; padding:16px 0;">
+      <div class="footer-logos">
+        <img src="assets/logo-astas.png" alt="ASTAS logo">
+        <img src="assets/logo-makedonija.png" alt="Udruženje internista Makedonije logo">
+      </div>
+      <div style="font-size:13px;color:var(--muted);text-align:center">
+        © SkoNS 529/2026 • Novi Sad
+      </div>
     </div>
-
-    <div style="font-size:13px;color:var(--muted);text-align:center">
-      © SkoNS 529/2026 • Novi Sad
-    </div>
-  </div>
-</footer>
+  </footer>
+</body>
+</html>
